@@ -10,12 +10,12 @@ void printHelp();
 
 int main(int argc, char **argv)
 {
-	if(argc != 18) {
+    if(argc != 18) {
         printHelp();
-	} else {
+    } else {
         int status = 1;
-		Enigma enigma;
-		enigmaInit(&enigma);
+        Enigma enigma;
+        enigmaInit(&enigma);
 
         status &= setEnigmaRotor(&enigma, 1, argv[1], 1, argv[2], 2);
         status &= setEnigmaRotor(&enigma, 2, argv[3], 3, argv[4], 4);
@@ -37,9 +37,9 @@ int main(int argc, char **argv)
         } else {
             printHelp();
         }
-	}
+    }
 
-	return 0;
+    return 0;
 }
 
 int setEnigmaRotor(Enigma *enigma, int rotorPosition, const char *rotorArg, int rotorArgIndex, char *offsetArg, int offsetArgIndex)
@@ -77,15 +77,15 @@ int addPlug(Enigma *enigma, const char *arg, int argIndex)
 
 int rotorNumberFromArg(const char *arg, int argIndex)
 {
-	int result = -1;
+    int result = -1;
 
-	if(strcmp(arg, "I") == 0) result = 1;
-	if(strcmp(arg, "II") == 0) result = 2;
-	if(strcmp(arg, "III") == 0) result = 3;
-	if(strcmp(arg, "IV") == 0) result = 4;
-	if(strcmp(arg, "V") == 0) result = 5;
+    if(strcmp(arg, "I") == 0) result = 1;
+    if(strcmp(arg, "II") == 0) result = 2;
+    if(strcmp(arg, "III") == 0) result = 3;
+    if(strcmp(arg, "IV") == 0) result = 4;
+    if(strcmp(arg, "V") == 0) result = 5;
 
-	return result;
+    return result;
 }
 
 void printHelp()

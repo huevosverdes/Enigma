@@ -5,8 +5,8 @@
 #include "constants.h"
 
 typedef struct {
-	int plugPairs[LETTER_COUNT];
-	int plugsUsed;
+    int plugPairs[LETTER_COUNT];
+    int plugsUsed;
 } PlugBoard;
 
 void plugBoardInit(PlugBoard *plugBoard);

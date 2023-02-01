@@ -5,10 +5,10 @@
 #include "constants.h"
 
 typedef struct {
-	int rotorID;
-	int map[LETTER_COUNT];
-	int turnoverPosition;
-	int positionOffset;
+    int rotorID;
+    int map[LETTER_COUNT];
+    int turnoverPosition;
+    int positionOffset;
 } Rotor;
 
 void rotorInit(Rotor *rotor, int rotorNumber);

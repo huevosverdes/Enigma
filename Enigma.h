@@ -8,11 +8,11 @@
 #include "Rotor.h"
 
 typedef struct {
-	PlugBoard plugBoard;
-	Rotor rotor1;
-	Rotor rotor2;
-	Rotor rotor3;
-	Rotor reflector;
+    PlugBoard plugBoard;
+    Rotor rotor1;
+    Rotor rotor2;
+    Rotor rotor3;
+    Rotor reflector;
 } Enigma;
 
 void enigmaInit(Enigma *enigma);
