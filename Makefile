@@ -16,4 +16,4 @@ Rotor.o : Rotor.h Rotor.c
 	$(COMPILER) $(FLAGS) $^ -c
 
 clean :
-	rm -rf Enigma.exe *.o
+	rm -rf Enigma.exe *.o *.gch
